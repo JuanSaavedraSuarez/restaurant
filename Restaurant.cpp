@@ -2,6 +2,7 @@
 #include "Customer.hpp"
 #include "removeElement.hpp"
 
+#include <codecvt>
 #include <iostream>
 #include <memory>
 
@@ -25,3 +26,7 @@ bool Restaurant::reserveTable(std::shared_ptr<Customer>& customer) {
     return false;
 }
 
+void Restaurant::printWaitlist() {
+    std::cout << "The following people are waiting for a table:" << std::endl;
+
+}
