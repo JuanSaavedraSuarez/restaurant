@@ -17,6 +17,8 @@ public:
     Restaurant(int initialTableCount);
     bool reserveTable(std::shared_ptr<Customer>& customer);
     void printWaitlist();
+    void releaseTable(int tableNumber);
+    void notifyWaitlist();
 };
 
 #endif
